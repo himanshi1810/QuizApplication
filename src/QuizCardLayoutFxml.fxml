@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="306.0" style="-fx-border-color: #36454F;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="QuizCardLayoutFxml">
+   <children>
+      <VBox layoutX="-12.0" layoutY="-42.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label fx:id="title" text="Quiz Title">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="noq" text="Number Of Questions ;-25">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FlowPane alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="225.0">
+               <children>
+                  <JFXButton fx:id="startButton" buttonType="RAISED" onAction="#startQuiz" prefHeight="37.0" prefWidth="110.0" style="-fx-background-color: #708090;" text="Start Quiz" textFill="#eae4e4">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </FlowPane>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <DropShadow height="63.135" radius="35.75375" width="81.88">
+         <color>
+            <Color red="0.9578947424888611" green="0.9507992267608643" blue="0.9507992267608643" />
+         </color>
+      </DropShadow>
+   </effect>
+</AnchorPane>
